@@ -62,12 +62,14 @@ public:
             return 0;
         }
 
-        if (CURRENT_DAY + signup_time == TOTAL_DAYS) {
+        if (CURRENT_DAY + signup_time >= TOTAL_DAYS) {
             return 0;
         }
 
         long long _score = 0;
         long long days_left = TOTAL_DAYS - (CURRENT_DAY + signup_time);
+        days_left = max(days_left, 0LL);
+
         unsigned long long books_able_shipped = days_left * books_day;
         books_to_be_taken = min(books_able_shipped, books.size());
         for (int i = 0; i < books_to_be_taken; i++) {
@@ -76,7 +78,7 @@ public:
 
         _score = _score / signup_time;
         score = _score;
-        return _score; //// SCORE = score/signuptime?
+        return _score;
     }
 
     void take_this_lib() {
@@ -99,7 +101,6 @@ long long books, libraries;
 
 int main() {
     cin >> books >> libraries >> TOTAL_DAYS;
-
     long long score = 0;
     for (int i = 0; i < books; ++i) {
         cin >> score;
