@@ -1,11 +1,13 @@
 #include <iostream>
+#include <string>
 #include <cmath>
 #include <algorithm>
 #include <cstdio>
 #include <fstream>
-
 using namespace std;
+string name;
 
 int main() {
-    cout << "Hello world" << endl;
+    cin>> name;
+    cout << "Hello " << name << endl;
 }
