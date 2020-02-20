@@ -1,5 +1,7 @@
 @echo off
-cmd /c gh.exe < inputs\file1.txt > outputs\file1.txt
-cmd /c gh.exe < inputs\file2.txt > outputs\file2.txt
-cmd /c gh.exe < inputs\file3.txt > outputs\file3.txt
-cmd /c gh.exe < inputs\file4.txt > outputs\file4.txt
+cmd /c gh.exe < inputs\a_example.txt > outputs\a_example.txt
+cmd /c gh.exe < inputs\b_read_on.txt > outputs\b_read_on.txt
+cmd /c gh.exe < inputs\c_incunabula.txt > outputs\c_incunabula.txt
+cmd /c gh.exe < inputs\d_tough_choices.txt > outputs\d_tough_choices.txt
+cmd /c gh.exe < inputs\e_so_many_books.txt > outputs\e_so_many_books.txt
+cmd /c gh.exe < inputs\f_libraries_of_the_world.txt > outputs\f_libraries_of_the_world.txt
