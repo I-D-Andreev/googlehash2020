@@ -3,4 +3,4 @@ project(gh)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(gh main.cpp)
+add_executable(gh gh.cpp)
