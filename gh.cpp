@@ -35,9 +35,9 @@ struct Library {
 public:
     long long id;
     long long num_books;
-    long long signup_time;
+    long long signup_time = 10;
     long long books_day; // books per day which can be shipped
-    vector<Book> books;
+    vector<Book> books = {};
     bool is_taken = false;
 
     long long score = 0;
